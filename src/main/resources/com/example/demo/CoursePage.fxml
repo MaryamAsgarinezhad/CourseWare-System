@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiController.CoursePageController">
+   <children>
+      <Button layoutY="395.0" mnemonicParsing="false" onAction="#Courseware" text="Courseware" />
+      <Label fx:id="mssg" layoutX="88.0" layoutY="395.0" prefHeight="25.0" prefWidth="556.0" />
+      <VBox layoutX="211.0" layoutY="14.0" prefHeight="339.0" prefWidth="419.0">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="419.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="131.0" text="Educational content">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="b1" mnemonicParsing="false" onAction="#newEducationalContent" prefHeight="34.0" prefWidth="38.0" text="new" />
+                  <TextField fx:id="contentName" prefHeight="27.0" prefWidth="162.0" promptText="Educational content name" />
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="129.0" prefWidth="419.0">
+              <content>
+                <AnchorPane fx:id="a" minHeight="0.0" minWidth="0.0" prefWidth="402.0">
+                     <children>
+                        <VBox fx:id="v1" layoutY="-1.0" prefWidth="405.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <HBox prefHeight="26.0" prefWidth="419.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="131.0" text="Homeworks">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="b2" mnemonicParsing="false" onAction="#newHomework" prefHeight="34.0" prefWidth="38.0" text="new" />
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="131.0" prefWidth="419.0">
+               <content>
+                  <AnchorPane fx:id="aa" minHeight="0.0" minWidth="0.0" prefWidth="402.0">
+                     <children>
+                        <VBox fx:id="v2" layoutX="-1.0" layoutY="-1.0" prefWidth="406.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <HBox prefHeight="26.0" prefWidth="419.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="69.0" text="TA list:">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="taLabel" prefHeight="41.0" prefWidth="350.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ScrollPane layoutX="8.0" layoutY="77.0" prefHeight="272.0" prefWidth="183.0">
+        <content>
+          <AnchorPane fx:id="aaaa" minHeight="0.0" minWidth="0.0" prefWidth="167.0">
+               <children>
+                  <VBox fx:id="calender" layoutY="-1.0" prefWidth="165.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="8.0" layoutY="52.0" prefHeight="25.0" prefWidth="183.0" text="Educational Calender">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <MenuButton layoutX="8.0" layoutY="349.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" text="Sort by:">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#sortByrelease" text="release time" />
+            <MenuItem mnemonicParsing="false" onAction="#sortByTimeRemained" text="time remained" />
+         </items>
+      </MenuButton>
+      <HBox fx:id="hhh" layoutX="16.0" layoutY="14.0" prefHeight="25.0" prefWidth="183.0">
+         <children>
+            <TextField fx:id="AddStu" prefHeight="25.0" prefWidth="124.0" promptText="Enter username" />
+            <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Add">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#addStu" text="Student" />
+                <MenuItem mnemonicParsing="false" onAction="#addTA" text="TA" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

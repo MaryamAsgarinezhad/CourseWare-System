@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane fx:id="dateTime" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiController.MenuController">
+   <children>
+      <Pane fx:id="pane" opacity="0.49" prefHeight="533.0" prefWidth="719.0" style="-fx-background-color: #47bf7d;" />
+      <Button layoutX="198.0" layoutY="201.0" mnemonicParsing="false" onAction="#Messages" prefHeight="25.0" prefWidth="157.0" text="Messages" />
+      <Button layoutX="23.0" layoutY="201.0" mnemonicParsing="false" onAction="#chat" prefHeight="25.0" prefWidth="163.0" text="Chat" />
+      <MenuButton fx:id="selectUnits" layoutX="22.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="Select Units">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#selectUnit" text="By faculty" />
+          <MenuItem mnemonicParsing="false" onAction="#SelectByRecomm" text="By Recommendation" />
+        </items>
+      </MenuButton>
+      <Button fx:id="logoutBtn" layoutY="507.0" mnemonicParsing="false" onAction="#Logout" text="logout" />
+      <Label fx:id="email" layoutX="14.0" layoutY="44.0" prefHeight="17.0" prefWidth="51.0" text="Email:" />
+      <Label fx:id="username" layoutX="14.0" layoutY="21.0" prefHeight="17.0" prefWidth="77.0" text="User Name:" />
+      <HBox fx:id="hbox" layoutX="64.0" layoutY="245.0" prefHeight="218.0" prefWidth="455.0">
+         <children>
+            <VBox fx:id="v1" prefHeight="295.0" prefWidth="133.0" />
+            <VBox fx:id="v2" prefHeight="295.0" prefWidth="309.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="h2" layoutX="23.0" layoutY="169.0" prefHeight="25.0" prefWidth="673.0" spacing="10.0">
+         <children>
+            <MenuButton fx:id="Registeration" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="Registeration">
+               <items>
+                  <MenuItem fx:id="CourseList" mnemonicParsing="false" onAction="#courselist" text="CourseList" />
+                  <MenuItem fx:id="ProfessorList" mnemonicParsing="false" onAction="#ProfessorList" text="ProfessorList" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="reportCard" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="Report Card ">
+               <items>
+                  <MenuItem fx:id="TemporaryGrades" mnemonicParsing="false" onAction="#TemporaryGrades" text="TemporaryGrades" />
+                  <MenuItem fx:id="e" mnemonicParsing="false" onAction="#EducationalStatus" text="EducationalStatus" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="userprofile" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="User Profile">
+              <items>
+                <MenuItem fx:id="ViewProfile" mnemonicParsing="false" onAction="#ViewProfile" text="ViewProfile" />
+              </items>
+            </MenuButton>
+         </children>
+      </HBox>
+      <Label fx:id="l1" layoutX="102.0" layoutY="21.0" prefHeight="17.0" prefWidth="416.0" />
+      <Label fx:id="l2" layoutX="64.0" layoutY="44.0" prefHeight="17.0" prefWidth="455.0" />
+      <VBox fx:id="vvvv" layoutX="529.0" layoutY="115.0" prefHeight="36.0" prefWidth="157.0" />
+      <Label fx:id="username1" layoutX="14.0" layoutY="72.0" prefHeight="17.0" prefWidth="100.0" text="Last Enter Time:" />
+      <Label fx:id="l11" layoutX="114.0" layoutY="72.0" prefHeight="17.0" prefWidth="552.0" />
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="163.0" layoutX="542.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ColorPicker fx:id="colorPicker" layoutX="586.0" layoutY="507.0" onAction="#color" prefHeight="25.0" prefWidth="126.0" promptText="tap to change backGround color" style="-fx-background-color: #47bf7d;">
+         <value>
+            <Color red="0.27843138575553894" green="0.7490196228027344" blue="0.4901960790157318" />
+         </value>
+      </ColorPicker>
+      <Button layoutX="364.0" layoutY="202.0" mnemonicParsing="false" onAction="#AdminMessages" prefHeight="25.0" prefWidth="157.0" text="Admin Messages" />
+      <Label fx:id="username11" layoutX="14.0" layoutY="98.0" prefHeight="17.0" prefWidth="66.0" text="is Offline:" />
+      <Label fx:id="isOff" layoutX="86.0" layoutY="98.0" prefHeight="17.0" prefWidth="133.0" />
+      <Button fx:id="Reconnect" layoutX="56.0" layoutY="507.0" mnemonicParsing="false" onAction="#Reconnect" prefHeight="25.0" prefWidth="94.0" text="Reconnect" />
+      <MenuButton fx:id="Courseware" layoutX="535.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="Courseware">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#Courseware" text="My courses" />
+          <MenuItem mnemonicParsing="false" onAction="#calender" text="Calender" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiController.CourseListController">
+   <children>
+      <Button fx:id="menu" layoutY="552.0" mnemonicParsing="false" onAction="#menu" prefHeight="25.0" prefWidth="90.0" text="MainMenu" />
+      <VBox fx:id="vbox" layoutX="7.0" layoutY="47.0" prefHeight="152.0" prefWidth="97.0">
+         <children>
+            <Label fx:id="filterLabel" prefHeight="38.0" prefWidth="115.0" text="Filters" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt3" promptText="enter Faculty" />
+            <TextField fx:id="txt2" promptText="enter Unit" />
+            <TextField fx:id="txt1" promptText="enter Professor" />
+            <Button fx:id="btn" mnemonicParsing="false" onAction="#apply" prefHeight="30.0" prefWidth="81.0" text="Apply">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox fx:id="hbox" layoutX="111.0" layoutY="37.0" prefHeight="522.0" prefWidth="788.0">
+         <children>
+            <VBox fx:id="name" prefHeight="541.0" prefWidth="120.0" />
+            <VBox fx:id="unit" prefHeight="541.0" prefWidth="60.0" />
+            <VBox fx:id="number" prefHeight="541.0" prefWidth="65.0" />
+            <VBox fx:id="faculty" prefHeight="541.0" prefWidth="98.0" />
+            <VBox fx:id="proffessor" prefHeight="541.0" prefWidth="95.0" />
+            <VBox fx:id="Degree" prefHeight="541.0" prefWidth="97.0" />
+            <VBox fx:id="Date" prefHeight="522.0" prefWidth="163.0" />
+            <VBox fx:id="group" prefHeight="522.0" prefWidth="45.0" />
+            <VBox fx:id="edit" prefHeight="522.0" prefWidth="50.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="hbox2" layoutX="111.0" layoutY="2.0" prefHeight="32.0" prefWidth="788.0">
+         <children>
+            <Label fx:id="l1" prefHeight="32.0" prefWidth="120.0" text="Course Name">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l2" prefHeight="32.0" prefWidth="60.0" text="Unit">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l3" prefHeight="32.0" prefWidth="65.0" text="Number">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l4" prefHeight="32.0" prefWidth="97.0" text="Faculty">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l5" prefHeight="32.0" prefWidth="95.0" text="Proffessor">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l6" prefHeight="32.0" prefWidth="97.0" text="Degree">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l7" prefHeight="32.0" prefWidth="163.0" text="Date Of Exam">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l8" prefHeight="32.0" prefWidth="50.0" text="group">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="l81" prefHeight="32.0" prefWidth="50.0">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="mssg" layoutX="104.0" layoutY="552.0" prefHeight="25.0" prefWidth="614.0" />
+      <VBox fx:id="vbox1" layoutX="7.0" layoutY="230.0" prefHeight="163.0" prefWidth="97.0">
+         <children>
+            <Label fx:id="filterLabel1" prefHeight="38.0" prefWidth="115.0" text="Additional info" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="info1" promptText="TA usernames" />
+            <TextField fx:id="info2" promptText="prerequisites" />
+            <TextField fx:id="info3" promptText="corequisite" />
+            <TextField fx:id="info4" promptText="Capacity" />
+            <TextField fx:id="info5" promptText="Date Of Class" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

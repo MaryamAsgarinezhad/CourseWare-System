@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiController.EducationalStatusController">
+   <children>
+      <Button fx:id="menu" layoutY="605.0" mnemonicParsing="false" onAction="#menu" prefHeight="25.0" prefWidth="87.0" text="MainMenu" />
+      <HBox fx:id="hbox" layoutX="232.0" layoutY="42.0" prefHeight="585.0" prefWidth="360.0">
+         <children>
+            <VBox fx:id="v1" prefHeight="622.0" prefWidth="118.0" />
+            <VBox fx:id="v2" prefHeight="622.0" prefWidth="64.0" />
+            <VBox fx:id="v3" prefHeight="622.0" prefWidth="161.0" />
+         </children>
+      </HBox>
+      <Label fx:id="units" layoutX="30.0" layoutY="51.0" prefHeight="32.0" prefWidth="112.0" text="Units Passed :">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitsNumber" layoutX="40.0" layoutY="83.0" prefHeight="32.0" prefWidth="54.0" text="0" />
+      <Label fx:id="Av" layoutX="31.0" layoutY="131.0" prefHeight="32.0" prefWidth="112.0" text="Average Score :">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="AvNumber" layoutX="41.0" layoutY="163.0" prefHeight="32.0" prefWidth="54.0" text="0" />
+      <VBox fx:id="vv" layoutX="36.0" layoutY="225.0" prefHeight="84.0" prefWidth="152.0">
+         <children>
+            <Label fx:id="LL" prefHeight="37.0" prefWidth="155.0" text="Filter">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tt" prefHeight="23.0" prefWidth="152.0" promptText="Enter Student number" />
+            <Button fx:id="bb" mnemonicParsing="false" onAction="#apply" text="Apply" />
+         </children>
+      </VBox>
+      <Label fx:id="mssg" layoutX="36.0" layoutY="323.0" prefHeight="25.0" prefWidth="152.0" />
+      <HBox layoutX="234.0" layoutY="2.0" prefHeight="40.0" prefWidth="360.0">
+         <children>
+            <VBox fx:id="v11" prefHeight="622.0" prefWidth="118.0">
+               <children>
+                  <Label fx:id="l11" prefHeight="32.0" prefWidth="112.0" text="Final Grade">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="v21" prefHeight="622.0" prefWidth="64.0">
+               <children>
+                  <Label fx:id="l21" prefHeight="32.0" prefWidth="112.0" text="Unit">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="v31" prefHeight="622.0" prefWidth="161.0">
+               <children>
+                  <Label fx:id="l31" prefHeight="32.0" prefWidth="178.0" text="Course Name">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

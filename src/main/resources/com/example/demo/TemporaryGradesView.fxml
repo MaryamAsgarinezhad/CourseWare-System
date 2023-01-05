@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiController.TemporaryGradesController">
+   <children>
+      <Button fx:id="menu" layoutY="513.0" mnemonicParsing="false" onAction="#menu" prefHeight="25.0" prefWidth="76.0" text="MainMenu" />
+      <HBox fx:id="hbox" layoutX="3.0" layoutY="31.0" prefHeight="481.0" prefWidth="661.0">
+         <children>
+            <VBox fx:id="v1" prefHeight="504.0" prefWidth="136.0" />
+            <VBox fx:id="v2" prefHeight="537.0" prefWidth="61.0" />
+            <VBox fx:id="v3" prefHeight="504.0" prefWidth="206.0" />
+            <VBox fx:id="v4" prefHeight="504.0" prefWidth="209.0" />
+            <VBox fx:id="v5" prefHeight="533.0" prefWidth="60.0" />
+         </children>
+      </HBox>
+      <Label fx:id="mssg" layoutX="78.0" layoutY="513.0" prefHeight="25.0" prefWidth="601.0" />
+      <HBox layoutY="-1.0" prefHeight="33.0" prefWidth="679.0">
+         <children>
+            <VBox fx:id="v11" prefHeight="25.0" prefWidth="136.0">
+               <children>
+                  <Label fx:id="l11" prefHeight="33.0" prefWidth="99.0" text="Course Name">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="v21" prefHeight="537.0" prefWidth="61.0">
+               <children>
+                  <Label fx:id="l21" prefHeight="33.0" prefWidth="61.0" text="Grade">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="v31" prefHeight="5.0" prefWidth="206.0">
+               <children>
+                  <Label fx:id="l31" prefHeight="33.0" prefWidth="183.0" text="Your Object">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="v41" prefHeight="504.0" prefWidth="209.0">
+               <children>
+                  <Label fx:id="l41" prefHeight="33.0" prefWidth="209.0" text="Professor Reply">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="v51" prefHeight="533.0" prefWidth="60.0">
+               <children>
+                  <Label fx:id="l51" prefHeight="33.0" prefWidth="60.0" text="Apply">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
